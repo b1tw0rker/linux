@@ -1,4 +1,4 @@
-# Angreifer nutzen Lücke im HTTP/2-Protokoll aus
+# Attackers exploit HTTP/2 protocol vulnerability
 
 What is the Rapid Reset Gap?
 
