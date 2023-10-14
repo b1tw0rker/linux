@@ -10,7 +10,7 @@ A worrisome aspect of this gap is the fact that, according to Google, the client
 
 Find more information here: 
 
-[](https://www.heise.de/news/Rapid-Reset-Angreifer-nutzten-Luecke-in-HTTP-2-Protokoll-seit-August-2023-aus-9330889.html)
+[https://www.heise.de/news/Rapid-Reset-Angreifer-nutzten-Luecke-in-HTTP-2-Protokoll-seit-August-2023-aus-9330889.html](https://www.heise.de/news/Rapid-Reset-Angreifer-nutzten-Luecke-in-HTTP-2-Protokoll-seit-August-2023-aus-9330889.html)
 
 
 
