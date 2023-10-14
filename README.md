@@ -1,6 +1,6 @@
 # Linux Snippets
 
-Here you can find various linux commands and programs. Mostly topics: Seucrity
+Here you can find various linux commands,snippets and programs. Mostly topics: Security
 
 
 ### drop all MySQL databases
@@ -88,7 +88,7 @@ d + ALT + }
 
 ```bash
 find / -path /proc -prune -o -type f -perm -4000 -exec ls -ld {} \; > setuid.txt & # find setuid
-find / -path /proc -prune -o -type f -perm -2000 -exec ls -ld {} \; > setdid.txt & # find setgid
+find / -path /proc -prune -o -type f -perm -2000 -exec ls -ld {} \; > setgid.txt & # find setgid
 
 ```
 
