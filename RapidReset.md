@@ -29,11 +29,13 @@ Use the iptables module limit to limit the number of connections. Attention. Use
     iptables -A INPUT -p tcp --tcp-flags RST RST -j DROP
 
 
+
     ### Rate Limit SSH Connections
     ###
     ###
     iptables -A INPUT  -p tcp -m tcp -s 192.168.0.20 --dport 22 -m state --state NEW,ESTABLISHED -m limit --limit 3/min --limit-burst 5 -j ACCEPT
     iptables -A OUTPUT  -p tcp -m tcp -d 192.168.0.20 --sport 22 -m state --state ESTABLISHED,RELATED -j ACCEPT
+
 
 
     ### Rate restriction per IP
