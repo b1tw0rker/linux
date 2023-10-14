@@ -8,6 +8,11 @@ However, attackers can abuse this feature by sending continuous requests and abo
 
 A worrisome aspect of this gap is the fact that, according to Google, the client and server do not need to coordinate the cancellation of a stream. This means that the client can perform unilateral actions, which allows the possibility of many requests in a short period of time.
 
+Find more information here: 
+
+[Linktext](https://www.heise.de/news/Rapid-Reset-Angreifer-nutzten-Luecke-in-HTTP-2-Protokoll-seit-August-2023-aus-9330889.html)
+
+
 ### Workaround
 
 Use the iptables module limit to limit the number of connections. Attention. Use per IP address first and then the global limit.
@@ -51,6 +56,7 @@ Use the iptables module limit to limit the number of connections. Attention. Use
 
 
 ```
+
 
 © 2023 by Dipl. Wirt.-Ing. Nick Herrmann
 DISCLAIMER
