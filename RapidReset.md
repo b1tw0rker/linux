@@ -1,4 +1,4 @@
-# Attackers exploit HTTP/2 protocol vulnerability
+# Attackers exploit HTTP/2 protocol vulnerability - CVE-2023-44487
 
 What is the Rapid Reset Gap?
 
