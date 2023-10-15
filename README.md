@@ -106,7 +106,11 @@ lsattr /var/log/messages # test file messages for +a attribut
 ```
 
 
+### jump between words on the terminal
 
+```bash
+STRG + ArrowLeft || ArrowRight
+```
 
 
 
