@@ -10,6 +10,7 @@ mysql -p<DEINPASSWORT> -e "show databases" | grep -v Database | grep -v mysql | 
 ```
 
 
+
 ### find - practical regex examples
 
 ```bash
