@@ -84,11 +84,12 @@ d + ALT + }
 
 
 
-### find all files with setuid or setguid
+### find files with setuid or setguid and print with file
 
 ```bash
-find / -path /proc -prune -o -type f -perm -4000 -exec ls -ld {} \; > setuid.txt & # find setuid
-find / -path /proc -prune -o -type f -perm -2000 -exec ls -ld {} \; > setgid.txt & # find setgid
+
+find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
+
 
 ```
 
