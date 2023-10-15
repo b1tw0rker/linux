@@ -98,7 +98,7 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 
 chattr +a /var/log/messages
 
-lattr /var/log/messages # test file for +a attribut
+lsattr /var/log/messages # test file for +a attribut
 
 ```
 
