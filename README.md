@@ -5,8 +5,10 @@ Here you can find various linux commands,snippets and programs. Mostly topics: S
 
 ### drop all MySQL databases
 
+Attention: This script will delete ALL databases!
+
 ```bash
-mysql -p<DEINPASSWORT> -e "show databases" | grep -v Database | grep -v mysql | grep -v information_schema | gawk '{print "drop database " $1 ";select sleep(0.1);"}' | mysql -p<DEINPASSWORT>
+mysql -p<PASSWORD> -e "show databases" | grep -v Database | grep -v mysql | grep -v information_schema | grep -v performance_schema | gawk '{print "drop database " $1 ";select sleep(0.1);"}' | mysql -p<PASSWORD>
 ```
 
 
