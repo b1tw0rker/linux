@@ -66,7 +66,7 @@ cd -
 ### DEL o Byte files
 
 ```bash
-find . -type f -size 0b -print    # print o byte files
+find . -type f -size 0b -print    # print 0 byte files
 find . -type f -size 0b -delete   # del 0 byte files
 ```
 
@@ -79,7 +79,7 @@ find . -type f -size +400M
 ### delete the whole block downunder with vi
 
 ```bash
-d + ALT + }
+d , ALT + }
 ```
 
 
@@ -98,7 +98,7 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 
 chattr +a /var/log/messages
 
-lsattr /var/log/messages # test file for +a attribut
+lsattr /var/log/messages # test file messages for +a attribut
 
 ```
 
