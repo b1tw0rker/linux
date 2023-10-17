@@ -85,6 +85,11 @@ find . -type f -size +400M
 d , ALT + }
 ```
 
+### empty whole file within vi
+
+```bash
+d , SHIFT + G
+```
 
 
 ### find files with setuid or setguid and print with file
