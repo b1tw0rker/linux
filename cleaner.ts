@@ -1,8 +1,8 @@
 /**
  *
- * Find a print unsued images in your project
+ * Find and print unsued images in your project
  * Usage: tsc cleaner.ts , node cleaner.js
- * Replace Area Variables to your needs
+ * Replace Variables to your needs
  * License: MIT
  *
  */
