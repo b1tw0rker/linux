@@ -10,6 +10,8 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 - [Disclaimer](#Disclaimer)
 - [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
 - [vi tricks](#vi-tricks)
+- [find tricks](#find-tricks)
+- [Security](#security)
 - [Miscellaneous](#miscellaneous)
 - [License](#license)
 
@@ -95,20 +97,7 @@ vi n/search /var/log/messages
 
 
 
-
-
-
-## Miscellaneous
-
-### Drop all MySQL databases
-
-Attention: This script will delete ALL databases! Do NOT use it, until you really know what you are doing.
-
-```bash
-mysql -p<PASSWORD> -e "show databases" | grep -v Database | grep -v mysql | grep -v information_schema | grep -v performance_schema | grep -v sys | gawk '{print "drop database " $1 ";select sleep(0.1);"}' | mysql -p<PASSWORD>
-```
-
-
+## find tricks
 
 ### Find - practical regex examples
 
@@ -130,6 +119,73 @@ find . -type d -exec chmod 755 {} \;
 
 ```bash
 find /path/to/files -type f -exec sed -i 's/oldstring/new string/g' {} \;
+```
+
+
+### Del 0 (zero,empty) Byte files
+
+```bash
+find . -type f -size 0b -print    # print 0 byte files
+find . -type f -size 0b -delete   # del 0 byte files
+```
+
+### Find large files
+
+```bash
+find . -type f -size +400M
+```
+
+
+
+
+## Security
+
+### Find files with setuid or setguid - stdout to console
+
+```bash
+
+find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
+
+```
+
+### Protect logfiles against deletion and clearing
+
+```bash
+
+chattr +a /var/log/messages
+
+lsattr /var/log/messages # prints +a attribut to stdout
+
+```
+This protects messages for deletion and clearing. Even if you are root!
+Do it with all importend files.
+
+
+
+### Rapid Reset b.c.w. HTTP/2 Attack - fast hack
+
+```bash
+
+# Allow 50 RST_Packets per minute.
+# Adjust the number 50 to your server workload
+/sbin/iptables -A INPUT -p tcp --tcp-flags RST RST -m limit --limit 50/min -j ACCEPT
+/sbin/iptables -A INPUT -p tcp --tcp-flags RST RST -j DROP
+
+```
+
+[RapidReset/HTTP/2 Attack Details](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
+
+
+
+
+## Miscellaneous
+
+### Drop all MySQL databases
+
+Attention: This script will delete ALL databases! Do NOT use it, until you really know what you are doing.
+
+```bash
+mysql -p<PASSWORD> -e "show databases" | grep -v Database | grep -v mysql | grep -v information_schema | grep -v performance_schema | grep -v sys | gawk '{print "drop database " $1 ";select sleep(0.1);"}' | mysql -p<PASSWORD>
 ```
 
 
@@ -157,55 +213,7 @@ exit 0
 ```
 
 
-### Del 0 (zero,empty) Byte files
 
-```bash
-find . -type f -size 0b -print    # print 0 byte files
-find . -type f -size 0b -delete   # del 0 byte files
-```
-
-### Find large files
-
-```bash
-find . -type f -size +400M
-```
-
-
-
-
-### Find files with setuid or setguid - stdout to console
-
-```bash
-
-find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
-
-```
-
-### Protect logfiles against deletion and clearing
-
-```bash
-
-chattr +a /var/log/messages
-
-lsattr /var/log/messages # prints +a attribut to stdout
-
-```
-This protects messages for deletion and clearing. Even if you are root!
-Do it with all importend files.
-
-
-### Rapid Reset b.c.w. HTTP/2 Attack - fast hack
-
-```bash
-
-# Allow 50 RST_Packets per minute.
-# Adjust the number 50 to your server workload
-/sbin/iptables -A INPUT -p tcp --tcp-flags RST RST -m limit --limit 50/min -j ACCEPT
-/sbin/iptables -A INPUT -p tcp --tcp-flags RST RST -j DROP
-
-```
-
-[RapidReset/HTTP/2 Attack Details](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
 
 
 
