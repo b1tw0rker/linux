@@ -29,7 +29,7 @@ find . -type f -exec chmod 644 {} \;
 find . -type d -exec chmod 755 {} \;
 ```
 
-### find & replace
+### bulk find & replace
 
 ```bash
 find /path/to/files -type f -exec sed -i 's/oldstring/new string/g' {} \;
@@ -92,7 +92,7 @@ d , SHIFT + G
 ```
 
 
-### find files with setuid or setguid and print with file
+### find files with setuid or setguid - stdout to console
 
 ```bash
 
@@ -100,13 +100,13 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 
 ```
 
-### protect logfiles
+### protect logfiles against deletion and clearing
 
 ```bash
 
 chattr +a /var/log/messages
 
-lsattr /var/log/messages # test file messages for +a attribut
+lsattr /var/log/messages # prints +a attribut to stdout
 
 ```
 
