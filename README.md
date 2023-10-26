@@ -301,5 +301,13 @@ cat /var/lib/tor/hidden_service/hostname # prints 'hidden service' domainname
 
 <a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read more details</a>
 
+
+### W
+
+```bash
+w
+```
+
+
 # License
 [MIT](https://choosealicense.com/licenses/mit/)
