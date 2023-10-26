@@ -62,15 +62,15 @@ mkdir /tmp/new && cd $_
 
 The special variable $_ contains the last argument of the last command
 
-## vi Tricks
+## vi tricks
 
-### Delete the whole block downunder with vi
+### Delete the whole block downunder
 
 ```bash
 d , ALT + }
 ```
 
-### Empty whole file - vi in command mode
+### Empty whole file
 
 ```bash
 d , SHIFT + G
@@ -94,7 +94,7 @@ vi +n /var/log/messages
 ### open vi on first searchresult
 
 ```bash
-vi n/search /var/log/messages
+vi +/search /var/log/messages
 ```
 
 
