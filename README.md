@@ -184,11 +184,10 @@ lynis audit system
 
 Lynis security scan details:
 
-  Hardening index : 72 [##############      ]
+Hardening index : 72 [############## ]  
+Tests performed : 264  
+Plugins enabled : 0
 
-  Tests performed : 264
-
-  Plugins enabled : 0
 
 
 ```bash
