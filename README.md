@@ -99,7 +99,7 @@ vi +/search /var/log/messages
 
 
 
-## find tricks
+## Find tricks
 
 ### Regex examples
 
