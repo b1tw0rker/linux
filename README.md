@@ -111,7 +111,7 @@ find . -iname 'pageinfo.php' -type f -exec rm -f {} \;  # find & remove!
 
 find . -iname '*[0-9]*.php' -type f -exec echo {} \;
 
-### chmod file and folders
+# chmod file and folders
 find . -type f -exec chmod 644 {} \;
 find . -type d -exec chmod 755 {} \;
 ```
@@ -262,12 +262,12 @@ exit 0
 ### Tor hidden service
 
 ```bash
-apt-get/dnf install tor
+apt/dnf install tor
 ```
 
 
 ```bash
-#/etc/tor/torrc
+# /etc/tor/torrc
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 192.168.13.199:80
 ```
