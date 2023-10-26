@@ -259,7 +259,7 @@ done
 
 exit 0
 ```
-## Tor hidden service
+### Tor hidden service
 
 ```bash
 apt-get/dnf install tor
