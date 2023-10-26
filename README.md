@@ -120,6 +120,26 @@ STRG + ArrowLeft || ArrowRight
 ```
 
 
+### show history and call a command
+
+```bash
+
+history
+
+!876 # execute command on position 876
+
+```
+
+### $_
+
+```bash
+
+mkdir /tmp/new && cd $_
+
+```
+
+The special variable $_ contains the last argument of the last command
+
 
 ### License
 [MIT](https://choosealicense.com/licenses/mit/)
