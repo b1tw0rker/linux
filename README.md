@@ -4,9 +4,9 @@ Here you can find various linux commands,snippets and programs. Mostly topics: S
 
 ## Inhalt
 
-- [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
-- [Miscellaneous](#miscellaneous)
-- [License](#license)
+- [Terminal movement commands and tricks](##terminal-movement-commands-and-tricks)
+- [Miscellaneous](##miscellaneous)
+- [License](##license)
 
 
 ## Terminal movement commands and tricks
@@ -157,5 +157,5 @@ This protects messages for deletion and clearing. Even if you are root!
 Do it with all importend files.
 
 
-### License
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
