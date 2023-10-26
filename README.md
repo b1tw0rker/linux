@@ -1,6 +1,6 @@
 # Linux Snippets
 
-Here you can find various linux commands,snippets and programs. Mostly topics: Security
+Here u can find various Linux commands, snippets, scripts, and security tips & tricks.
 
 ## Inhalt
 
