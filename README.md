@@ -19,7 +19,6 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 
 ## Disclaimer
 ALL SCRIPTS COMES WITH ABSOLUTE NO WARRANTY!
-
 All programs are WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
