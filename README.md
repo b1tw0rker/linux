@@ -126,7 +126,7 @@ STRG + ArrowLeft || ArrowRight
 
 history
 
-!876 # execute command on position 876
+!876 # executes command on position 876
 
 ```
 
