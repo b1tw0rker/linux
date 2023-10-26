@@ -165,7 +165,7 @@ This protects messages for deletion and clearing. Even if you are root!
 Do it with all importend files.
 
 
-### Rapid Reset fast hack
+### Rapid Reset b.c.w. HTTP/2 Attack - fast hack
 
 ```bash
 
