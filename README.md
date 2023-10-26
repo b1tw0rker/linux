@@ -215,12 +215,39 @@ done
 
 exit 0
 ```
+## Tor hidden service
+
+```bash
+apt-get/dnf install tor
 
 
+```
 
 
+```bash
+#/etc/tor/torrc
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 192.168.13.199:80
+```
 
+```bash
+cd /var/lib/tor
+mkdir hidden_service
+chown debian-tor:debian-tor hidden_service
+chmod 0700 hidden_service
+```` 
 
+```bash
+systemctl tor restart
+```
+
+```bash
+cat /var/lib/tor/hidden_service/hostname #shows tor hidden service domain
+```
+
+[Read More Details](http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen)
+
+<a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_blank">Read More Details</a>
 
 
 ## License
