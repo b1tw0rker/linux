@@ -226,7 +226,7 @@ rkhunter --check
 
  twadmin --generate-keys --site-keyfile /etc/tripwire/site.key
 
- cp site.key centos.host-x.de-local.key 
+ cp site.key centos.host-x.de-local.key # this is a workaround. Guess here is a bug in tripwire... 
 
  twadmin --create-cfgfile -S /etc/tripwire/site.key /etc/tripwire/twcfg.txt
 
