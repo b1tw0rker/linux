@@ -163,6 +163,14 @@ lsattr /var/log/messages # prints +a attribut to stdout
 
 ```
 
+### Rapid Reset fast hack
+´´´bash
+
+[RapidReset Dokumentation](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
+
+
+´´´
+
 This protects messages for deletion and clearing. Even if you are root!
 Do it with all importend files.
 
