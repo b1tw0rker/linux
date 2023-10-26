@@ -1,4 +1,4 @@
-# Linux Collection
+# Linux snippet collection
 
 ![LinuxSnippets version](https://img.shields.io/badge/version-v1.0.4-green.svg)
 
