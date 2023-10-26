@@ -243,8 +243,6 @@ systemctl tor restart
 cat /var/lib/tor/hidden_service/hostname #shows tor hidden service domain
 ```
 
-[Read More Details](http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen)
-
 <a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read More Details</a>
 
 
