@@ -2,7 +2,14 @@
 
 Here you can find various linux commands,snippets and programs. Mostly topics: Security
 
-# Terminal movement commands and tricks
+## Inhalt
+
+- [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
+- [Miscellaneous](#miscellaneous)
+- [License](#license)
+
+
+## Terminal movement commands and tricks
 
 
 ### cd to previous folder
@@ -41,7 +48,7 @@ mkdir /tmp/new && cd $_
 The special variable $_ contains the last argument of the last command
 
 
-# Miscellaneous
+## Miscellaneous
 
 ### drop all MySQL databases
 
