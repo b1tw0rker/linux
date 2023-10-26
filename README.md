@@ -191,7 +191,7 @@ Plugins enabled : 0
 
 ```bash
 
-cat /var/log/lynis-report.dat | grep suggestions # to the work ;-)
+cat /var/log/lynis-report.dat | grep suggestions # to the work pirates ;-)
 
 ```
 
@@ -222,7 +222,7 @@ rkhunter --check
 
 [RapidReset/HTTP/2 Attack Details](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
 
-## Tripwire
+### Tripwire
 
 lorem ipsum
 
