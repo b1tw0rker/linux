@@ -173,6 +173,31 @@ ab -h
 
 ```
 
+### lynis audit tool
+
+```bash
+
+lynis audit system
+
+```
+
+Lynis security scan details:
+
+  Hardening index : 72 [##############      ]
+  Tests performed : 264
+  Plugins enabled : 0
+
+
+```bash
+
+cat /var/log/lynis-report.dat | grep suggestions # to the work ;-)
+
+```
+
+
+
+
+
 ### Rapid Reset b.c.w. HTTP/2 Attack - fast hack
 
 ```bash
