@@ -17,7 +17,7 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 - [Miscellaneous](#miscellaneous)
 - [License](#license)
 
-## DISCLAIMER!
+## Disclaimer
 ALL SCRIPTS COMES WITH ABSOLUTE NO WARRANTY!
 
 All programs are WITHOUT ANY WARRANTY; without even the implied warranty of
