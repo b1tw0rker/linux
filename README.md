@@ -219,8 +219,6 @@ exit 0
 
 ```bash
 apt-get/dnf install tor
-
-
 ```
 
 
@@ -247,7 +245,7 @@ cat /var/lib/tor/hidden_service/hostname #shows tor hidden service domain
 
 [Read More Details](http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen)
 
-<a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_blank">Read More Details</a>
+<a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read More Details</a>
 
 
 ## License
