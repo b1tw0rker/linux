@@ -224,13 +224,13 @@ rkhunter --check
 
  dnf install tripwire
 
- twadmin --generate-keys --site-keyfile /etc/tripwire/<hostname>-local.key
+ twadmin --generate-keys --site-keyfile /etc/tripwire/site.key
 
- twadmin --create-cfgfile -S /etc/tripwire/<hostname>-local.key /etc/tripwire/twcfg.txt
+ cp site.key centos.host-x.de-local.key 
 
- twadmin --create-polfile -S /etc/tripwire/<hostname>-local.key /etc/tripwire/twpol.txt
+ twadmin --create-cfgfile -S /etc/tripwire/site.key /etc/tripwire/twcfg.txt
 
- 
+ twadmin --create-polfile -S /etc/tripwire/site.key /etc/tripwire/twpol.txt
 
  tripwire --init
 
