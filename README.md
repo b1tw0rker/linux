@@ -4,10 +4,10 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 
 ## Inhalt
 
-- [Terminal movement commands and tricks](##terminal-movement-commands-and-tricks)
-- [Warning](##Warning)
-- [Miscellaneous](##miscellaneous)
-- [License](##license)
+- [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
+- [Warning](#Warning)
+- [Miscellaneous](#miscellaneous)
+- [License](#license)
 
 ## WARNING!
 ALL SCRIPTS COMES WITH ABSOLUTE NO WARRANTY!
