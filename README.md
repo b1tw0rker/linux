@@ -173,7 +173,7 @@ ab -h
 
 ```
 
-### lynis audit tool
+### Lynis audit tool
 
 ```bash
 
@@ -184,7 +184,9 @@ lynis audit system
 Lynis security scan details:
 
   Hardening index : 72 [##############      ]
+
   Tests performed : 264
+  
   Plugins enabled : 0
 
 
