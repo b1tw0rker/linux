@@ -73,21 +73,21 @@ d , SHIFT + G
 ```
 
 
-### open vi at last line
+### Open vi in the last line
 
 ```bash
 vi + /var/log/messages
 ```
 
 
-### open vi on line n
+### Open vi on line n
 
 ```bash
 vi +n /var/log/messages
 ```
 
 
-### open vi on first searchresult
+### Open vi on first searchresult
 
 ```bash
 vi +/search /var/log/messages
