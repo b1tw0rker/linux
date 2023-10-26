@@ -4,12 +4,12 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 
 ## Inhalt
 
-- [Warning](#Warning)
+- [Disclaimer](#Disclaimer)
 - [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
 - [Miscellaneous](#miscellaneous)
 - [License](#license)
 
-## WARNING!
+## DISCLAIMER!
 ALL SCRIPTS COMES WITH ABSOLUTE NO WARRANTY!
 
 All programs are WITHOUT ANY WARRANTY; without even the implied warranty of
