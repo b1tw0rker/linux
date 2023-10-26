@@ -38,7 +38,7 @@ STRG + ArrowLeft || ArrowRight
 ```
 
 
-### Show history and call a command
+### Print history and call a command
 
 ```bash
 
@@ -308,6 +308,7 @@ cat /var/lib/tor/hidden_service/hostname # prints 'hidden service' domainname
 w
 ```
 
+print logged users
 
 # License
 [MIT](https://choosealicense.com/licenses/mit/)
