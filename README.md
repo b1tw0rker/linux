@@ -177,6 +177,7 @@ ab -h
 
 ```bash
 
+dnf install lynis
 lynis audit system
 
 ```
@@ -186,7 +187,7 @@ Lynis security scan details:
   Hardening index : 72 [##############      ]
 
   Tests performed : 264
-  
+
   Plugins enabled : 0
 
 
@@ -197,7 +198,14 @@ cat /var/log/lynis-report.dat | grep suggestions # to the work ;-)
 ```
 
 
+### Rkhunter
 
+```bash
+
+dnf install rkhunter
+rkhunter --check
+
+```
 
 
 ### Rapid Reset b.c.w. HTTP/2 Attack - fast hack
