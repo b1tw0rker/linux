@@ -159,20 +159,25 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 chattr +a /var/log/messages
 
 lsattr /var/log/messages # prints +a attribut to stdout
-
-
 ```
+This protects messages for deletion and clearing. Even if you are root!
+Do it with all importend files.
+
 
 ### Rapid Reset fast hack
 ´´´bash
 
-[RapidReset Dokumentation](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
+# Allow 50 RST_Packets per minute.
+# Adjust the number 50 to your server workload
+/sbin/iptables -A INPUT -p tcp --tcp-flags RST RST -m limit --limit 50/min -j ACCEPT
+/sbin/iptables -A INPUT -p tcp --tcp-flags RST RST -j DROP 
 
 
 ´´´
+[RapidReset Dokumentation](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
 
-This protects messages for deletion and clearing. Even if you are root!
-Do it with all importend files.
+
+
 
 
 ## License
