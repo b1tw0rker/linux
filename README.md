@@ -122,7 +122,7 @@ find . -type d -exec chmod 755 {} \;
 find /path/to/folder -type f -exec sed -i 's/oldstring/new string/g' {} \;
 ```
 
-Search and replace 'oldstring' to 'new string' in **all** files in folder: /path/to/folder
+Search and replace 'oldstring' to 'new string' in **all** files within folder: /path/to/folder
 
 
 ### Del 0 Byte files
@@ -222,7 +222,7 @@ rkhunter --check
 
 [RapidReset/HTTP/2 Attack Details](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
 
-##Tripwire
+## Tripwire
 
 lorem ipsum
 
