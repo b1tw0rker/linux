@@ -10,7 +10,7 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 ## Inhalt
 
 - [Disclaimer](#Disclaimer)
-- [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
+- [Terminal movement tricks](#terminal-movement-tricks)
 - [Vi tricks](#vi-tricks)
 - [Find tricks](#find-tricks)
 - [Security](#security)
@@ -24,7 +24,7 @@ All programs are WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
-## Terminal movement commands and tricks
+## Terminal and tricks
 
 
 ### cd to previous folder
@@ -240,7 +240,7 @@ systemctl tor restart
 ```
 
 ```bash
-cat /var/lib/tor/hidden_service/hostname # prints tor hidden service domain
+cat /var/lib/tor/hidden_service/hostname # prints 'hidden service' domainname
 ```
 
 <a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read More Details</a>
