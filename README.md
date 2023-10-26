@@ -108,6 +108,9 @@ chattr +a /var/log/messages
 
 lsattr /var/log/messages # prints +a attribut to stdout
 
+This protects messages for deletion and clearing. Even if you are root!
+Do it with all importend files.
+
 ```
 
 
