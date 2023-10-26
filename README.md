@@ -47,7 +47,7 @@ STRG + ArrowLeft || ArrowRight
 
 history
 
-!876 # executes command on position 876
+!876 # executes cmd on position 876
 
 ```
 
@@ -59,7 +59,7 @@ mkdir /tmp/new && cd $_
 
 ```
 
-The special variable $_ contains the last argument of the last command
+The special variable $_ contains the last argument of the last command.
 
 ## vi tricks
 
@@ -155,7 +155,7 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 
 ```bash
 
-chattr +a /var/log/messages
+chattr +a /var/log/messages # only append is possible
 
 lsattr /var/log/messages # prints +a attribut to stdout
 
