@@ -187,7 +187,7 @@ Plugins enabled : 0
 
 ```bash
 
-cat /var/log/lynis-report.dat | grep suggestions # to the work pirates ;-)
+cat /var/log/lynis-report.dat | grep suggestion # to the work pirates ;-)
 
 ```
 
