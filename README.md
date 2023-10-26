@@ -176,7 +176,7 @@ Do it with all importend files.
 
 ```
 
-[RapidReset Dokumentation](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
+[RapidReset/HTTP/2 Attack Details](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
 
 
 
