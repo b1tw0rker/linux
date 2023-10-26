@@ -157,8 +157,7 @@ chattr +a /var/log/messages # only append is possible
 lsattr /var/log/messages # prints +a attribut to stdout
 
 ```
-This protects messages for deletion and clearing. Even if you are root!
-Do it with all importend files.
+This protects messages from deletion and removal. Even if you have root access! Use it for all important files.
 
 ### Pentest with apache benchmark (ab)
 
@@ -227,22 +226,27 @@ lorem ipsum
 
 ### Drop all MySQL databases
 
-Attention: This script will delete ALL databases! Do NOT use it, until you really know what you are doing.
+Attention: This script will delete ALL databases! Do NOT use it unless you really know what you are doing.
 
 ```bash
+
 mysql -p<PASSWORD> -e "show databases" | grep -v Database | grep -v mysql | grep -v information_schema | grep -v performance_schema | grep -v sys | gawk '{print "drop database " $1 ";select sleep(0.1);"}' | mysql -p<PASSWORD>
+
 ```
 
 
 ### Connected ports
 
 ```bash
+
 lsof -i TCP -n -P | awk '/ESTABLISHED/ {print $1"/"$3"/"$8}' | sort -u
+
 ```
 
 ### Monitoring connected ports
 
 ```bash
+
 #!/bin/bash
 i=1
 
@@ -255,36 +259,47 @@ while [ "$i" == 1 ] ; do
 done
 
 exit 0
+
 ```
 ### Tor hidden service
 
 ```bash
+
 apt/dnf install tor
+
 ```
 
 
 ```bash
+
 # /etc/tor/torrc
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 192.168.13.199:80
+
 ```
 
 ```bash
+
 cd /var/lib/tor
 mkdir hidden_service
 chown debian-tor:debian-tor hidden_service
 chmod 0700 hidden_service
+
 ```` 
 
 ```bash
+
 systemctl tor restart
+
 ```
 
 ```bash
+
 cat /var/lib/tor/hidden_service/hostname # prints 'hidden service' domainname
+
 ```
 
-<a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read More Details</a>
+<a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read more details</a>
 
 # License
 [MIT](https://choosealicense.com/licenses/mit/)
