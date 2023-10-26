@@ -116,7 +116,7 @@ find . -type f -exec chmod 644 {} \;
 find . -type d -exec chmod 755 {} \;
 ```
 
-### Bulk find & replace
+### Find & replace bulk
 
 ```bash
 find /path/to/folder -type f -exec sed -i 's/oldstring/new string/g' {} \;
