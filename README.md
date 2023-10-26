@@ -2,6 +2,46 @@
 
 Here you can find various linux commands,snippets and programs. Mostly topics: Security
 
+# Terminal movement commands and tricks
+
+
+### cd to previous folder
+
+```bash
+cd -
+```
+
+### jump between words on the terminal
+
+```bash
+
+STRG + ArrowLeft || ArrowRight
+
+```
+
+
+### show history and call a command
+
+```bash
+
+history
+
+!876 # executes command on position 876
+
+```
+
+### $_
+
+```bash
+
+mkdir /tmp/new && cd $_
+
+```
+
+The special variable $_ contains the last argument of the last command
+
+
+# Miscellaneous
 
 ### drop all MySQL databases
 
@@ -60,11 +100,6 @@ exit 0
 ```
 
 
-### cd to previous folder
-
-```bash
-cd -
-```
 
 ### DEL o Byte files
 
@@ -113,35 +148,6 @@ lsattr /var/log/messages # prints +a attribut to stdout
 
 This protects messages for deletion and clearing. Even if you are root!
 Do it with all importend files.
-
-### jump between words on the terminal
-
-```bash
-
-STRG + ArrowLeft || ArrowRight
-
-```
-
-
-### show history and call a command
-
-```bash
-
-history
-
-!876 # executes command on position 876
-
-```
-
-### $_
-
-```bash
-
-mkdir /tmp/new && cd $_
-
-```
-
-The special variable $_ contains the last argument of the last command
 
 
 ### License
