@@ -5,8 +5,16 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 ## Inhalt
 
 - [Terminal movement commands and tricks](##terminal-movement-commands-and-tricks)
+- [Warning](##Warning)
 - [Miscellaneous](##miscellaneous)
 - [License](##license)
+
+## WARNING!
+ALL SCRIPTS COMES WITH ABSOLUTE NO WARRANTY!
+
+All programs are WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 
 
 ## Terminal movement commands and tricks
