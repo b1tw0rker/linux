@@ -209,12 +209,7 @@ rkhunter --check
 
 ### Kernel hardening
 
-```bash
-
-link zu /etc/sysctl.d
 [/etc/sysctl.d/99-bw-custom.conf](https://github.com/b1tw0rker/linux/blob/master/etc/sysctl.d/99-bw-custom.conf)
-
-```
 
 
 ### Rapid Reset b.c.w. HTTP/2 Attack - fast hack
