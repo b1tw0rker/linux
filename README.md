@@ -189,13 +189,11 @@ Tests performed : 264
 Plugins enabled : 0
 
 
-
 ```bash
 
 cat /var/log/lynis-report.dat | grep suggestions # to the work ;-)
 
 ```
-
 
 ### Rkhunter
 
@@ -224,8 +222,9 @@ rkhunter --check
 
 [RapidReset/HTTP/2 Attack Details](https://github.com/b1tw0rker/linux/blob/master/RapidReset.md)
 
+##Tripwire
 
-
+lorem ipsum
 
 ## Miscellaneous
 
@@ -289,7 +288,6 @@ cat /var/lib/tor/hidden_service/hostname # prints 'hidden service' domainname
 ```
 
 <a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read More Details</a>
-
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
