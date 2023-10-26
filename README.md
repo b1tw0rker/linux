@@ -9,8 +9,8 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 
 - [Disclaimer](#Disclaimer)
 - [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
-- [vi tricks](#vi-tricks)
-- [find tricks](#find-tricks)
+- [Vi tricks](#vi-tricks)
+- [Find tricks](#find-tricks)
 - [Security](#security)
 - [Miscellaneous](#miscellaneous)
 - [License](#license)
@@ -68,7 +68,7 @@ The special variable $_ contains the last argument of the last command
 d , ALT + }
 ```
 
-### Empty whole file within vi
+### Empty whole file - vi in command mode
 
 ```bash
 d , SHIFT + G
