@@ -163,7 +163,15 @@ lsattr /var/log/messages # prints +a attribut to stdout
 This protects messages for deletion and clearing. Even if you are root!
 Do it with all importend files.
 
+### Pentest with apache benchmark (ab)
 
+```bash
+
+Usage: ab [options] [http[s]://]hostname[:port]/path
+
+ab -h
+
+```
 
 ### Rapid Reset b.c.w. HTTP/2 Attack - fast hack
 
