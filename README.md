@@ -28,7 +28,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 cd -
 ```
 
-### jump between words on the terminal
+### Jump between words on the terminal
 
 ```bash
 
@@ -37,7 +37,7 @@ STRG + ArrowLeft || ArrowRight
 ```
 
 
-### show history and call a command
+### Show history and call a command
 
 ```bash
 
@@ -60,7 +60,7 @@ The special variable $_ contains the last argument of the last command
 
 ## Miscellaneous
 
-### drop all MySQL databases
+### Drop all MySQL databases
 
 Attention: This script will delete ALL databases! Do NOT use it, until you really know what you are doing.
 
@@ -70,7 +70,7 @@ mysql -p<PASSWORD> -e "show databases" | grep -v Database | grep -v mysql | grep
 
 
 
-### find - practical regex examples
+### Find - practical regex examples
 
 ```bash
 find . -iname 'wthm*g.php' -type f -exec echo {} \;
@@ -86,14 +86,14 @@ find . -type f -exec chmod 644 {} \;
 find . -type d -exec chmod 755 {} \;
 ```
 
-### bulk find & replace
+### Bulk find & replace
 
 ```bash
 find /path/to/files -type f -exec sed -i 's/oldstring/new string/g' {} \;
 ```
 
 
-### connected ports
+### Connected ports
 
 ```bash
 lsof -i TCP -n -P | awk '/ESTABLISHED/ {print $1"/"$3"/"$8}' | sort -u
@@ -118,33 +118,33 @@ exit 0
 
 
 
-### DEL o Byte files
+### Del 0 (zero,empty) Byte files
 
 ```bash
 find . -type f -size 0b -print    # print 0 byte files
 find . -type f -size 0b -delete   # del 0 byte files
 ```
 
-### find large files
+### Find large files
 
 ```bash
 find . -type f -size +400M
 ```
 
-### delete the whole block downunder with vi
+### Delete the whole block downunder with vi
 
 ```bash
 d , ALT + }
 ```
 
-### empty whole file within vi
+### Empty whole file within vi
 
 ```bash
 d , SHIFT + G
 ```
 
 
-### find files with setuid or setguid - stdout to console
+### Find files with setuid or setguid - stdout to console
 
 ```bash
 
@@ -152,7 +152,7 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 
 ```
 
-### protect logfiles against deletion and clearing
+### Protect logfiles against deletion and clearing
 
 ```bash
 
