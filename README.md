@@ -220,7 +220,22 @@ rkhunter --check
 
 ### Tripwire
 
-lorem ipsum
+´´´bash
+
+ dnf install tripwire
+
+ twadmin --generate-keys --site-keyfile /etc/tripwire/site.key
+
+ twadmin --create-cfgfile -S /etc/tripwire/site.key /etc/tripwire/twcfg.txt
+
+ twadmin --create-polfile -S /etc/tripwire/site.key /etc/tripwire/twpol.txt
+
+ cp/mv site.key <hostname>-local.key
+
+ tripwire --init
+
+
+```
 
 # Miscellaneous
 
