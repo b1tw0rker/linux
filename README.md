@@ -2,10 +2,7 @@
 
 ![LinuxSnippets version](https://img.shields.io/badge/version-v1.0.4-green.svg)
 
-Nicks personal tips & tricks collection.
-
-
-Here u can find various Linux commands, snippets, scripts, and security tips & tricks.
+Nicks personal tips & tricks collection serves various Linux commands, snippets, scripts, and security tips & tricks.
 
 ## Inhalt
 
