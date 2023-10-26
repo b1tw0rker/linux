@@ -240,7 +240,7 @@ systemctl tor restart
 ```
 
 ```bash
-cat /var/lib/tor/hidden_service/hostname #shows tor hidden service domain
+cat /var/lib/tor/hidden_service/hostname # prints tor hidden service domain
 ```
 
 <a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read More Details</a>
