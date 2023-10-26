@@ -58,7 +58,7 @@ mkdir /tmp/new && cd $_
 
 The special variable $_ contains the last argument of the last command.
 
-## vi tricks
+## Vi tricks
 
 ### Delete the whole block downunder
 
