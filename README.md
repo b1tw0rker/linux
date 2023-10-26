@@ -9,6 +9,7 @@ Here u can find various Linux commands, snippets, scripts, and security tips & t
 
 - [Disclaimer](#Disclaimer)
 - [Terminal movement commands and tricks](#terminal-movement-commands-and-tricks)
+- [vi tricks](#vi-tricks)
 - [Miscellaneous](#miscellaneous)
 - [License](#license)
 
@@ -56,6 +57,45 @@ mkdir /tmp/new && cd $_
 ```
 
 The special variable $_ contains the last argument of the last command
+
+## vi Tricks
+
+### Delete the whole block downunder with vi
+
+```bash
+d , ALT + }
+```
+
+### Empty whole file within vi
+
+```bash
+d , SHIFT + G
+```
+
+
+### open vi at last line
+
+```bash
+vi + /var/log/messages
+```
+
+
+### open vi on line n
+
+```bash
+vi +n /var/log/messages
+```
+
+
+### open vi on first searchresult
+
+```bash
+vi n/search /var/log/messages
+```
+
+
+
+
 
 
 ## Miscellaneous
@@ -117,7 +157,6 @@ exit 0
 ```
 
 
-
 ### Del 0 (zero,empty) Byte files
 
 ```bash
@@ -131,17 +170,7 @@ find . -type f -size 0b -delete   # del 0 byte files
 find . -type f -size +400M
 ```
 
-### Delete the whole block downunder with vi
 
-```bash
-d , ALT + }
-```
-
-### Empty whole file within vi
-
-```bash
-d , SHIFT + G
-```
 
 
 ### Find files with setuid or setguid - stdout to console
