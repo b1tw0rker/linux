@@ -4,7 +4,7 @@
 
 Nicks personal tips & tricks collection serves various Linux commands, snippets, scripts, and security tips & tricks.
 
-## Inhalt
+# Inhalt
 
 - [Disclaimer](#Disclaimer)
 - [Terminal movement tricks](#terminal-movement-tricks)
@@ -14,13 +14,13 @@ Nicks personal tips & tricks collection serves various Linux commands, snippets,
 - [Miscellaneous](#miscellaneous)
 - [License](#license)
 
-## Disclaimer
+# Disclaimer
 ALL SCRIPTS COMES WITH ABSOLUTE NO WARRANTY!
 All programs are WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
-## Terminal and tricks
+# Terminal and tricks
 
 
 ### cd to previous folder
@@ -58,7 +58,7 @@ mkdir /tmp/new && cd $_
 
 The special variable $_ contains the last argument of the last command.
 
-## Vi tricks
+# Vi tricks
 
 ### Delete the whole block downunder
 
@@ -95,7 +95,7 @@ vi +/search /var/log/messages
 
 
 
-## Find tricks
+# Find tricks
 
 ### Regex examples
 
@@ -138,7 +138,7 @@ find . -type f -size +400M
 
 
 
-## Security
+# Security
 
 ### Find files with setuid or setguid - stdout to console
 
@@ -223,7 +223,7 @@ rkhunter --check
 
 lorem ipsum
 
-## Miscellaneous
+# Miscellaneous
 
 ### Drop all MySQL databases
 
@@ -286,5 +286,5 @@ cat /var/lib/tor/hidden_service/hostname # prints 'hidden service' domainname
 
 <a href="http://www.tamagothi.de/2016/01/30/kurzanleitung-hidden-service-mit-tor-aufsetzen" target="_new">Read More Details</a>
 
-## License
+# License
 [MIT](https://choosealicense.com/licenses/mit/)
