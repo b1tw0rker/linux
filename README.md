@@ -101,7 +101,7 @@ vi +/search /var/log/messages
 
 ## find tricks
 
-### Find - practical regex examples
+### Practical regex examples
 
 ```bash
 find . -iname 'wthm*g.php' -type f -exec echo {} \;
@@ -112,16 +112,18 @@ find . -iname 'pageinfo.php' -type f -exec rm -f {} \;  # find & remove!
 
 find . -iname '*[0-9]*.php' -type f -exec echo {} \;
 
-### chmod file or folders
+### chmod file and folders
 find . -type f -exec chmod 644 {} \;
 find . -type d -exec chmod 755 {} \;
 ```
 
-### Bulk find & replace
+### Bulk find & replace in folder
 
 ```bash
-find /path/to/files -type f -exec sed -i 's/oldstring/new string/g' {} \;
+find /path/to/folder -type f -exec sed -i 's/oldstring/new string/g' {} \;
 ```
+
+Search and replace 'oldstring' to 'new string' in **all** files in folder: /path/to/folder
 
 
 ### Del 0 (zero,empty) Byte files
