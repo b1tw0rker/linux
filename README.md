@@ -1,5 +1,8 @@
 # Linux Snippets
 
+![LinuxSnippets version](https://img.shields.io/badge/version-v1.0.4-green.svg)
+
+
 Here u can find various Linux commands, snippets, scripts, and security tips & tricks.
 
 ## Inhalt
