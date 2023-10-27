@@ -220,7 +220,7 @@ rkhunter --check
 
 ### Tripwire
 
-´´´bash
+```bash
 
  dnf install tripwire
 
