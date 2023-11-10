@@ -159,6 +159,8 @@ lsattr /var/log/messages # prints +a attribut to stdout
 ```
 This protects messages from deletion and removal. Even if you have root access! Use it for all important files.
 
+Develop: Also secure ./ssh/* files with chattr.
+
 ### Pentest with apache benchmark (ab)
 
 ```bash
@@ -236,6 +238,19 @@ rkhunter --check
 
 
 ```
+
+### SSH keygen
+
+```bash
+
+ssh-keygen -a 256 -t ed25519 -C "$(hostname)-$(date +'%d-%m-%Y')"
+
+
+```
+
+
+
+
 
 # Miscellaneous
 
