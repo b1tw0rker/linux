@@ -245,11 +245,12 @@ rkhunter --check
 
 ssh-keygen -a 256 -t ed25519 -C "$(hostname)-$(date +'%d-%m-%Y')"
 
+-a rounds
+             When saving a private key this option specifies the number of KDF (key derivation function) rounds used.  Higher numbers result in slower passphrase verification
+             and increased resistance to brute-force password cracking (should the keys be stolen).
 
+             
 ```
-
-
-
 
 
 # Miscellaneous
