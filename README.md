@@ -173,7 +173,13 @@ ab -h
 
 ```
 
-Hint: usage / at the end of the url is mandatory. ab will not run without the / - for example: ab -n 1000 https://www.lorem-ipsum.com/
+Using / at the end of the url is mandatory. ab will not run without the slah at the end.
+
+```bash
+
+ab -n 1000 https://www.lorem-ipsum.com/
+
+```
 
 
 ### Lynis audit tool
