@@ -171,7 +171,7 @@ Usage: ab [options] [http[s]://]hostname[:port]/path
 
 ab -h
 
-hint: / at the end of the url is mandatory. ab will not run without the /. for example: ab -nb 1000 https://www.lorem-ipsum.com/
+hint: usage / at the end of the url is mandatory. ab will not run without the / - for example: ab -n 1000 https://www.lorem-ipsum.com/
 
 ```
 
