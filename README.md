@@ -173,7 +173,7 @@ ab -h
 
 ```
 
-Using / at the end of the url is mandatory. ab will not run without the slah at the end.
+Using / at the end of the url is mandatory. ab will not run without the slash at the end.
 
 ```bash
 
