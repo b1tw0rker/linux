@@ -165,9 +165,9 @@ Develop: Also secure ./ssh/* files with chattr.
 
 ### Pentest with apache benchmark (ab)
 
-```bash
-
 Usage: ab [options] [http[s]://]hostname[:port]/path
+
+```bash
 
 ab -h
 
