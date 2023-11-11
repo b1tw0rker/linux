@@ -173,7 +173,7 @@ ab -h
 
 ```
 
-hint: usage / at the end of the url is mandatory. ab will not run without the / - for example: ab -n 1000 https://www.lorem-ipsum.com/
+Hint: usage / at the end of the url is mandatory. ab will not run without the / - for example: ab -n 1000 https://www.lorem-ipsum.com/
 
 
 ### Lynis audit tool
