@@ -169,6 +169,8 @@ Usage: ab [options] [http[s]://]hostname[:port]/path
 
 ab -h
 
+hint: / at the end of the url is mandatory. ab will not run without the /. for example: ab -nb 1000 https://www.lorem-ipsum.com/
+
 ```
 
 ### Lynis audit tool
