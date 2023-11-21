@@ -146,7 +146,7 @@ chattr +a /var/log/messages # only appending lines is possible
 
 chattr +i ~/.ssh/id25519 # file cannot be modified (no renaming, no symbolic link creation, no execution, no writable)
 
-chattr -R +i myfolder # Secure recursively a whole folder
+chattr -R +i /full/path/to/myfolder/ # Secure recursively a whole folder (using full path to the folder)
 ```
 
 chattr (Change Attribute) protects files from deletion, removal and modifing (immutable). Even if you have root access! Use it for all important files.
