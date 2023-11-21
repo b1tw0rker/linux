@@ -154,7 +154,7 @@ chattr (Change Attribute) protects files from deletion, removal and modifing (im
 ```bash
 lsattr /var/log/messages # prints +a attribut to stdout
 ```
-### Pentest with **a**pache **b**enchmark (ab)
+### Pentest with apache benchmark (ab)
 
 Usage: ab [options] [http[s]://]hostname[:port]/path
 
@@ -162,7 +162,7 @@ Usage: ab [options] [http[s]://]hostname[:port]/path
 ab -h
 ```
 
-Using / at the end of the url is mandatory. ab will not run without the slash at the end.
+Using / at the end of the url is *mandatory*. ab will not run without the slash at the end.
 
 ```bash
 ab -n 1000 https://www.some-lorem-ipsum-host.com/
