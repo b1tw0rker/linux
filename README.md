@@ -142,17 +142,17 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 ### Protect files against manipulation, removal and/or deletion
 
 ```bash
-chattr +a /var/log/messages # only appending lines is possible
+chattr +a /var/log/messages # only appending lines is possible.
 
-chattr +i ~/.ssh/id25519 # file cannot be modified (no renaming, no symbolic link creation, no execution, no writable)
+chattr +i ~/.ssh/id25519 # file cannot be modified (no renaming, no symbolic link creation, no execution, no writable).
 
-chattr -R +i /full/path/to/myfolder/ # Secure recursively a whole folder (using full path to the folder)
+chattr -R +i myfolder/ # Secure recursively all files in a whole folder and it's subfolders.
 ```
 
 chattr (Change Attribute) protects files from deletion, removal and modifing (immutable). Even if you have root access! Use it for all important files.
 
 ```bash
-lsattr /var/log/messages # prints +a attribut to stdout
+lsattr /var/log/messages # prints +a attribut from the file messages to stdout.
 ```
 ### Pentest with apache benchmark (ab)
 
@@ -182,6 +182,7 @@ Hardening index : 72 [############## ]
 Tests performed : 264  
 Plugins enabled : 0
 
+After analysis you may run:
 
 ```bash
 cat /var/log/lynis-report.dat | grep suggestion # to the work pirates ;-)
