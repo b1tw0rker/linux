@@ -154,7 +154,7 @@ chattr (Change Attribute) protects files from deletion, removal and modifing (im
 ```bash
 lsattr /var/log/messages # prints +a attribut to stdout
 ```
-### Pentest with apache benchmark (ab)
+### Pentest with **a**pache **b**enchmark (ab)
 
 Usage: ab [options] [http[s]://]hostname[:port]/path
 
