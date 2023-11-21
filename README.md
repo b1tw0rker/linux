@@ -143,8 +143,11 @@ find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 
 ```bash
 chattr +a /var/log/messages # only appending lines is possible
-
 lsattr /var/log/messages # prints +a attribut to stdout
+
+chattr +i ~/.ssh/id25519 # file cannot be modified (no renaming, no symbolic link creation, no execution, no writable)
+
+
 ```
 This protects messages from deletion and removal. Even if you have root access! Use it for all important files.
 
