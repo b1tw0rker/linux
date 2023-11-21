@@ -162,7 +162,7 @@ Usage: ab [options] [http[s]://]hostname[:port]/path
 ab -h
 ```
 
-Using / at the end of the url is *mandatory*. ab will not run without the slash at the end.
+Using / at the end of the url is **mandatory**. ab will not run without the slash at the end.
 
 ```bash
 ab -n 1000 https://www.some-lorem-ipsum-host.com/
