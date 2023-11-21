@@ -139,20 +139,21 @@ find . -type f -size +400M
 find / \( -perm -4000 -o -perm -2000 \) -type f -exec file {} \;
 ```
 
-### Protect logfiles against removal and deletion
+### Protect files against manipulation, removal and/or deletion
 
 ```bash
 chattr +a /var/log/messages # only appending lines is possible
-lsattr /var/log/messages # prints +a attribut to stdout
 
 chattr +i ~/.ssh/id25519 # file cannot be modified (no renaming, no symbolic link creation, no execution, no writable)
 
-
+chattr -R +i myfolder # Secure recursively a whole folder
 ```
-This protects messages from deletion and removal. Even if you have root access! Use it for all important files.
 
-Develop: Also secure ./ssh/* files with chattr.
+chattr (Change Attribute) protects files from deletion, removal and modifing (immutable). Even if you have root access! Use it for all important files.
 
+```bash
+lsattr /var/log/messages # prints +a attribut to stdout
+```
 ### Pentest with apache benchmark (ab)
 
 Usage: ab [options] [http[s]://]hostname[:port]/path
@@ -164,7 +165,7 @@ ab -h
 Using / at the end of the url is mandatory. ab will not run without the slash at the end.
 
 ```bash
-ab -n 1000 https://www.lorem-ipsum.com/
+ab -n 1000 https://www.some-lorem-ipsum-host.com/
 ```
 
 
