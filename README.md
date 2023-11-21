@@ -86,8 +86,6 @@ vi +n /var/log/messages
 vi +/search /var/log/messages
 ```
 
-
-
 # Find tricks
 
 ### Regex examples
