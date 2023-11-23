@@ -1,4 +1,14 @@
 #!/usr/bin/perl
+
+# Version: 1.0.1
+# last-modified. 23.11.2023
+# © 2019 - 2023 by Dipl. Wirt.-Ing. Nick Herrmann
+#
+# This program is WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# License. MIT
+
 use DBI;
 use DBD::mysql;
 

@@ -1,9 +1,22 @@
 #!/usr/bin/perl
-# (c) 2011-2021 by BitWorker, Nick Herrmann
-# version 1.2
 
+# Version: 1.2.0
+# last-modified. 23.11.2023
+# © 2013 - 2023 by Dipl. Wirt.-Ing. Nick Herrmann
+#
+# This program is WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# License. MIT
 
+### vars
+###
+###
 $device="/dev/md0";
+
+###
+###
+###
 system ("clear");
 
 

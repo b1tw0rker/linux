@@ -1,8 +1,16 @@
 /**
  *
+ * Version: 1.1.0
+ * last-modified. 23.11.2023
+ * © 2011 - 2023 by Dipl. Wirt.-Ing. Nick Herrmann
+ *
+ * This program is WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * 
  * Find and print unsued images in your project
  * Usage: tsc cleaner.ts , node cleaner.js
  * Replace Variables to your needs
+ * 
  * License: MIT
  *
  */

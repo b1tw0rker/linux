@@ -1,5 +1,14 @@
 #!/bin/bash
-# Version 1.1 - Stand 03.06.2012
+
+# Version: 1.1.0
+# last-modified. 23.11.2023
+# © 2011 - 2023 by Dipl. Wirt.-Ing. Nick Herrmann
+#
+# This program is WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# License. MIT
+
 
 ### vars
 ###

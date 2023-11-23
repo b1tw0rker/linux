@@ -1,6 +1,16 @@
 #!/bin/bash
 
-# This script uses iptables to control badnwith for different ports
+# Version: 1.1.0
+# last-modified. 23.11.2023
+# © 2020 - 2023 by Dipl. Wirt.-Ing. Nick Herrmann
+#
+# This program is WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# License. MIT
+
+
+# This script uses iptables to control bandwith for different ports
 
 
 ############################
