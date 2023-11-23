@@ -4,10 +4,13 @@
 # last-modified. 23.11.2023
 # © 2020 - 2023 by Dipl. Wirt.-Ing. Nick Herrmann
 #
+# Disclaimer
+#
 # This program is WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
 # License. MIT
+
 
 
 # This script uses iptables to control bandwith for different ports
