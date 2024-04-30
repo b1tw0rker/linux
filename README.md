@@ -1,6 +1,6 @@
 # Linux snippet collection
 
-![LinuxSnippets version](https://img.shields.io/badge/version-v1.0.5-green.svg)
+![LinuxSnippets version](https://img.shields.io/badge/version-v1.0.6-green.svg)
 
 Nicks personal tips & tricks collection serves various Linux commands, snippets, scripts, and security tips & tricks.
 
@@ -84,6 +84,12 @@ vi +n /var/log/messages
 
 ```bash
 vi +/search /var/log/messages
+```
+
+### Line numbers
+```bash
+: set number
+: set nonumber
 ```
 
 # Find tricks
